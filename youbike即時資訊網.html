@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouBike 即時資訊</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/controller.js" defer></script>
+  <script src="scripts/api.js" defer></script>
+</head>
+<body>
+  <nav class="nav">
+    <h1>YouBike 即時資料查詢</h1>
+    <div class="wrap">
+      <a class="link" href="https://www.youbike.com.tw/region/main/faq/">常見問題</a>
+      <a class="link" href="https://www.youbike.com.tw/region/main/rate/">收費方式</a>
+      <a class="link" href="https://www.youbike.com.tw/marketing/">活動快報</a>
+    </div>
+      <img src="img/nav.png">
+  </nav>
+  <div class="slideshow-container">
+    <div class="bannerwrap">
+      <div class="Slides animation">
+        <img src="img/1.jpg">
+      </div>
+      <div class="Slides animation">
+        <img src="img/2.jpg">
+      </div>
+      <div class="Slides animation">
+        <img src="img/3.jpg">
+      </div>
+      <div class="previous" >❮</div>
+      <div class="next" >❯</div>
+    </div>
+  </div>
+  <main>
+    <form id="searchForm">
+      <div class="info">
+        <small class="">資料來源：<a class="" href="https://data.gov.tw/dataset/137993">政府資料開放平台</a></small>
+      </div>
+      <div class="seachwrap">
+        <div class="seachtext">
+            <input type="text" class="" id="searchKeyword" placeholder="輸入關鍵字，例如：台北、中山區、八德....">
+        </div>
+        <div class="seach">
+            <button class="btn">搜尋</button>
+        </div>
+      </div>
+          <ul class="siteList">
+          </ul>
+    </form>
+  </main>
+</body>
+</html>
